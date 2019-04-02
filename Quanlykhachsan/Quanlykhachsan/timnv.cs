@@ -81,7 +81,7 @@ namespace Quanlykhachsan
               laydulieu dl=new laydulieu();
               if (radioButton1.Checked)
               {
-                  dt=dl.getdata("select hoten,diachi,ngaysinh,gioitinh from nhanvien where hoten LIKE '%"+textBox1.Text+"%'");
+                  dt=dl.getdata("select hoten,diachi,ngaysinh,gioitinh from nhanvien where hoten LIKE N'%"+textBox1.Text+"%'");
                   dataGridView1.DataSource=dt.Tables[0];
               }
               if (radioButton2.Checked)

@@ -88,7 +88,7 @@ namespace Quanlykhachsan
               laydulieu dl=new laydulieu();
               if (radioButton1.Checked)
               {
-                  dt=dl.getdata("select * from khachhang where tenkhach LIKE '%"+textBox1.Text+"%'");
+                  dt=dl.getdata("select * from khachhang where tenkhach LIKE N'%"+textBox1.Text+"%'");
                   dataGridView1.DataSource=dt.Tables[0];
               }
               if (radioButton2.Checked)
