@@ -6,11 +6,11 @@ using Quanlykhachsan.Lopdoituong;
 
 namespace Quanlykhachsan.Lopdoituong
 {
-    class KTdangnhap
+    public class KTdangnhap
     {
         private DataSet ds;
         public static string strquyenhan="",strnguoidung="",strhoten = "", strdiachi = "", strmanhanvien = "", strmatkhau = "";
-        public bool kt_dangnhap(string ten, string matkhau, string tenserver)
+        public bool kt_dangnhap(string ten, string matkhau)
         {
             //Lnhanvien nv = new Lnhanvien();
             try
