@@ -18,8 +18,8 @@ namespace UnitTest
         [TestMethod]
         public void DangNhapThanhCong()
         {
-            bool actual = KTdangnhap.kt_dangnhap("admin2", "admin");
-            bool expected = false;
+            bool actual = KTdangnhap.kt_dangnhap("admin", "admin");
+            bool expected = true;
             Assert.AreEqual(expected, actual);
         }
 
