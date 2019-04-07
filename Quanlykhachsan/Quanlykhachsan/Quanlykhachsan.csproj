@@ -79,6 +79,7 @@
     <Compile Include="Frmmain.Designer.cs">
       <DependentUpon>Frmmain.cs</DependentUpon>
     </Compile>
+    <Compile Include="KTQuyenHan.cs" />
     <Compile Include="Lopdoituong\ketnoi.cs" />
     <Compile Include="Lopdoituong\khach.cs" />
     <Compile Include="Lopdoituong\KTdangnhap.cs" />
