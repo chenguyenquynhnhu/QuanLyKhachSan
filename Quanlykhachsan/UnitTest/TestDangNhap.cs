@@ -22,6 +22,7 @@ namespace UnitTest
             bool expected = true;
             Assert.AreEqual(expected, actual);
         }
+
         [TestMethod]
         public void DangNhapSaiMatKhau()
         {
@@ -30,6 +31,21 @@ namespace UnitTest
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod]
+        public void DangNhapKhongNhapMatKhau()
+        {
+            bool actual = KTdangnhap.kt_dangnhap("admin", "");
+            bool expected = false;
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void DangNhapNhapSaiTenDangNhap()
+        {
+            bool actual = KTdangnhap.kt_dangnhap("admin123", "admin");
+            bool expected = false;
+            Assert.AreEqual(expected, actual);
+        }
 
     }
 }
