@@ -5,35 +5,24 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Data;
 using Quanlykhachsan;
 using Quanlykhachsan.Lopdoituong;
+using System.Windows;
+
 
 namespace UnitTest
 {
     [TestClass]
     public class TestDangNhap
     {
-        private KTdangnhap nv;
-
-        //public TestContext TestContest { get; set; }
-        [TestInitialize]
-        public void SetUp()
-        {
-            nv.ten = "admin";
-            nv.matkhau = "admin";
-        }
+        //private KTdangnhap nv;
 
         [TestMethod]
         public void DangNhapThanhCong()
         {
-            bool actual = nv.kt_dangnhap();
-
-            Assert.IsFalse(actual);
+            bool actual = KTdangnhap.kt_dangnhap("admin2", "admin");
+            bool expected = false;
+            Assert.AreEqual(expected, actual);
         }
 
-        //[TestMethod]
-        //public void TestDataDriven()
-        //{
-
-        //}
 
     }
 }
