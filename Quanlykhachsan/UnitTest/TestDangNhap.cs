@@ -47,5 +47,12 @@ namespace UnitTest
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod]
+        public void DangNhapKhongNhapTenDangNhap()
+        {
+            bool actual = KTdangnhap.kt_dangnhap("", "admin");
+            bool expected = false;
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
