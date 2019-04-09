@@ -13,7 +13,7 @@ namespace UnitTest
         [TestMethod]
         public void Test_trungmaKH()
         {
-            bool actual = KTTrungMaNV.kt_trungmaKH("KH001");
+            bool actual = KTTrungMaKH.kt_trungmaKH("KH001");
             bool expected = false;
             Assert.AreEqual(expected, actual);
         }

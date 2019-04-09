@@ -7,7 +7,7 @@ using System.Data;
 
 namespace Quanlykhachsan.Lopdoituong
 {
-    public class KTTrungMaNV
+    public class KTTrungMaKH
     {
         public static bool kt_trungmaKH(string maKH)
         {
