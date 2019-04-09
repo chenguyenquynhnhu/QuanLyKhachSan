@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="TestDangNhap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestTrungMaCheckin.cs" />
     <Compile Include="TestTrungMaKH.cs" />
   </ItemGroup>
   <ItemGroup>
