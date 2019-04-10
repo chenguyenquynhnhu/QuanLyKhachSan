@@ -9,13 +9,13 @@ using System.Windows;
 namespace UnitTest
 {
     [TestClass]
-    public class TestTrungMaCheckin
+    public class TestbangCheckin
     {
         [TestMethod]
         public void test_trungmacheckin()
         {
-            bool actual = KTTrungMaCheckin.kt_trungmacheckin("CK01");
-            bool expected = false;
+            bool actual = KTbangCheckin.kt_trungmacheckin("CK01");
+            bool expected = true;
             Assert.AreEqual(expected, actual);
         }
     }

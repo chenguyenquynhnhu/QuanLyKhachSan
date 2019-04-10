@@ -54,7 +54,7 @@
     <Compile Include="TestDangNhap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestNhapTuoi.cs" />
-    <Compile Include="TestTrungMaCheckin.cs" />
+    <Compile Include="TestbangCheckin.cs" />
     <Compile Include="TestbangKH.cs" />
   </ItemGroup>
   <ItemGroup>

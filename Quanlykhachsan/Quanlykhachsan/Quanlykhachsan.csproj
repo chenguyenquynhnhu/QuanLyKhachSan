@@ -83,7 +83,7 @@
     <Compile Include="Lopdoituong\khach.cs" />
     <Compile Include="Lopdoituong\KTdangnhap.cs" />
     <Compile Include="Lopdoituong\KTNhapTuoi.cs" />
-    <Compile Include="Lopdoituong\KTTrungMaCheckin.cs" />
+    <Compile Include="Lopdoituong\KTbangCheckin.cs" />
     <Compile Include="Lopdoituong\KTbangKH.cs" />
     <Compile Include="Lopdoituong\laydulieu.cs" />
     <Compile Include="Lopdoituong\Lnhanvien.cs" />
