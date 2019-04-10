@@ -84,7 +84,7 @@
     <Compile Include="Lopdoituong\KTdangnhap.cs" />
     <Compile Include="Lopdoituong\KTNhapTuoi.cs" />
     <Compile Include="Lopdoituong\KTTrungMaCheckin.cs" />
-    <Compile Include="Lopdoituong\KTTrungMaKH.cs" />
+    <Compile Include="Lopdoituong\KTbangKH.cs" />
     <Compile Include="Lopdoituong\laydulieu.cs" />
     <Compile Include="Lopdoituong\Lnhanvien.cs" />
     <Compile Include="Lopdoituong\sinhma.cs" />

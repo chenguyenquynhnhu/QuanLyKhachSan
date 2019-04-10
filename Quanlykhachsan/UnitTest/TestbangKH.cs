@@ -8,13 +8,13 @@ using System.Windows;
 namespace UnitTest
 {
     [TestClass]
-    public class TestTrungMaKH
+    public class TestbangKH
     {
         [TestMethod]
         public void Test_trungmaKH()
         {
-            bool actual = KTTrungMaKH.kt_trungmaKH("KH001");
-            bool expected = false;
+            bool actual = KTbangKH.kt_trungmaKH("KH001");
+            bool expected = true;
             Assert.AreEqual(expected, actual);
         }
     }
