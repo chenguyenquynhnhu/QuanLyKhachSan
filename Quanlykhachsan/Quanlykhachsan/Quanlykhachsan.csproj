@@ -80,7 +80,6 @@
       <DependentUpon>Frmmain.cs</DependentUpon>
     </Compile>
     <Compile Include="Lopdoituong\ketnoi.cs" />
-    <Compile Include="Lopdoituong\khach.cs" />
     <Compile Include="Lopdoituong\KTdangnhap.cs" />
     <Compile Include="Lopdoituong\KTbangCheckin.cs" />
     <Compile Include="Lopdoituong\KTbangKH.cs" />

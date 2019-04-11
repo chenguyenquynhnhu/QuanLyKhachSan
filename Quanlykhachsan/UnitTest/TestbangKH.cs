@@ -11,10 +11,18 @@ namespace UnitTest
     public class TestbangKH
     {
         [TestMethod]
+        public void Test_KhongNhapMaKH()
+        {
+            bool actual = KTbangKH.kt_ThemKhachBoTrongMaKH("");
+            bool expected = false;
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
         public void Test_trungmaKH()
         {
             bool actual = KTbangKH.kt_trungmaKH("KH001");
-            bool expected = true;
+            bool expected = false;
             Assert.AreEqual(expected, actual);
         }
 
@@ -22,7 +30,7 @@ namespace UnitTest
         public void Test_NhapTuoiKphaiDangSo()
         {
             bool actual = KTbangKH.kt_nhaptuoi("hai");
-            bool expected = true;
+            bool expected = false;
             Assert.AreEqual(expected, actual);
         }
         //[TestMethod]

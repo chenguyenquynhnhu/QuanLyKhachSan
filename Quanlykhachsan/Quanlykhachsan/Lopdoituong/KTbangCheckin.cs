@@ -21,15 +21,15 @@ namespace Quanlykhachsan.Lopdoituong
                 laydulieu dl = new laydulieu();
 
                 ds1 = dl.getdata("select * from checkin where macheckin = '" + macheckin + "' ");
-                if (ds1.Tables[0].Rows.Count == 0) { ketnoi.HuyKetNoi(); return false; }
+                if (ds1.Tables[0].Rows.Count == 0) { ketnoi.HuyKetNoi(); return true; }
                 else
                 {
                     MessageBox.Show("Mã check in đã tồn tại!", "Chú ý");
                     ketnoi.HuyKetNoi();
-                    return true;
+                    return false;
                 }
             }
-            catch { return false; }
+            catch { return true; }
         }
     }
 }

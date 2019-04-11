@@ -10,6 +10,20 @@ namespace Quanlykhachsan.Lopdoituong
 {
     public class KTbangKH
     {
+        public static bool kt_ThemKhachBoTrongMaKH(string maKH)
+        {
+            try
+            {
+                if (maKH == "")
+                {
+                    MessageBox.Show("Hãy nhập vào mã khách hàng", "Chú ý");
+                    return false;
+                }
+                return true;
+            }
+            catch { return true; }
+        }
+
         public static bool kt_trungmaKH(string maKH)
         {
             try
@@ -21,17 +35,17 @@ namespace Quanlykhachsan.Lopdoituong
                 laydulieu dl = new laydulieu();
 
                 ds1 = dl.getdata("select * from khachhang where makhach = '" + maKH + "' ");
-                if (ds1.Tables[0].Rows.Count == 0) { ketnoi.HuyKetNoi(); return false; }
+                if (ds1.Tables[0].Rows.Count == 0) { ketnoi.HuyKetNoi(); return true; }
                 else
                 {
                     MessageBox.Show("Mã khách hàng đã tồn tại!", "Chú ý");
                     ketnoi.HuyKetNoi();
-                    return true;
+                    return false;
                 }
                 
 
             }
-            catch { return false; }
+            catch { return true; }
         }
 
         public static bool kt_nhaptuoi(string tuoi)
@@ -44,7 +58,7 @@ namespace Quanlykhachsan.Lopdoituong
                 ketnoi.ThietlapketNoi();
                 laydulieu dl = new laydulieu();
                 ds1 = dl.getdata("insert into khachhang(tuoi)values('" + tuoi + "')");
-                MessageBox.Show("Nhập tuổi dạng số!", "Chú ý");
+                
                 return true;
             }
             catch { return false; }
@@ -65,6 +79,22 @@ namespace Quanlykhachsan.Lopdoituong
         //        else return true;
 
 
+        //    }
+        //    catch { return false; }
+        //}
+
+        //public static bool kt_ThemKhachDayDutt(string maKH, string tenKH, string tuoi, string gioitinh, string quoctich, string cmnd, string dt, string diachi, string ngaydat, string tgthue, string phongdon, string phongdoi, string loaiphong)
+        //{
+        //    try
+        //    {
+        //        DataSet ds1 = new DataSet();
+
+        //        ketnoi.ThietlapketNoi();
+        //        laydulieu dl = new laydulieu();
+        //        ds1 = dl.getdata("insert into khachhang values(" + "'" + maKH + "'," + "'" + tenKH + "'," + tuoi + "," + "'" + gioitinh + "'," + "'" + quoctich + "'," + "'" + cmnd + "'," + "'" + dt + "'," + "'" + diachi + "'," + "'" + ngaydat + "'," + tgthue + "," + phongdon + "," + phongdoi + ",'" + loaiphong + "')");
+        //        MessageBox.Show("Đã thêm khách hàng thành công", "Thông báo");
+        //        ketnoi.HuyKetNoi();
+        //        return true;
         //    }
         //    catch { return false; }
         //}

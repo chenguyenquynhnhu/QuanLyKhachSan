@@ -15,7 +15,7 @@ namespace UnitTest
         public void test_trungmacheckin()
         {
             bool actual = KTbangCheckin.kt_trungmacheckin("CK001");
-            bool expected = true;
+            bool expected = false;
             Assert.AreEqual(expected, actual);
         }
     }
