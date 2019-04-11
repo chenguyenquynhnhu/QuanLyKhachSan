@@ -34,6 +34,22 @@ namespace Quanlykhachsan.Lopdoituong
             catch { return false; }
         }
 
+        public static bool kt_nhaptuoi(string tuoi)
+        {
+            try
+            {
+
+                DataSet ds1 = new DataSet();
+
+                ketnoi.ThietlapketNoi();
+                laydulieu dl = new laydulieu();
+                ds1 = dl.getdata("insert into khachhang(tuoi)values('" + tuoi + "')");
+                MessageBox.Show("Nhập tuổi dạng số!", "Chú ý");
+                return true;
+            }
+            catch { return false; }
+        }
+
         //public static bool kt_KhongTrungMaKHvaMacheckin(string maKH, string macheckin)
         //{
         //    try
