@@ -14,8 +14,7 @@ namespace Quanlykhachsan.Lopdoituong
         {
             try
             {
-
-                KTbangCheckin P = new KTbangCheckin();
+                
                 DataSet ds1 = new DataSet();
 
                 ketnoi.ThietlapketNoi();

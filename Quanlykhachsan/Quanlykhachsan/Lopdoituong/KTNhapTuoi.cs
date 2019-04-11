@@ -14,16 +14,16 @@ namespace Quanlykhachsan.Lopdoituong
             try
             {
 
+                KTNhapTuoi P = new KTNhapTuoi();
                 DataSet ds1 = new DataSet();
-
 
                 ketnoi.ThietlapketNoi();
                 laydulieu dl = new laydulieu();
                 ds1 = dl.getdata("insert into khachhang(tuoi)values('" + tuoi + "')");
-                return false;
+                return true;
 
             }
-            catch { return true; }
+            catch { return false; }
         }
     }
 }
