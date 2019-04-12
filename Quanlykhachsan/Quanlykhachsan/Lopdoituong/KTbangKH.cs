@@ -24,6 +24,20 @@ namespace Quanlykhachsan.Lopdoituong
             catch { return true; }
         }
 
+        //public static bool kt_ThemKhachBoTrongTenKH(string tenKH)
+        //{
+        //    try
+        //    {
+        //        if (tenKH == "")
+        //        {
+        //            MessageBox.Show("Hãy nhập vào tên khách hàng", "Chú ý");
+        //            return false;
+        //        }
+        //        return true;
+        //    }
+        //    catch { return true; }
+        //}
+
         public static bool kt_trungmaKH(string maKH)
         {
             try
@@ -58,10 +72,11 @@ namespace Quanlykhachsan.Lopdoituong
                 ketnoi.ThietlapketNoi();
                 laydulieu dl = new laydulieu();
                 ds1 = dl.getdata("insert into khachhang(tuoi)values('" + tuoi + "')");
-                
                 return true;
             }
-            catch { return false; }
+            catch {
+                MessageBox.Show("Nhập tuổi dạng số!", "Chú ý");
+                return false; }
         }
 
         //public static bool kt_KhongTrungMaKHvaMacheckin(string maKH, string macheckin)

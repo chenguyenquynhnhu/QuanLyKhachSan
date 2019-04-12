@@ -10,6 +10,20 @@ namespace Quanlykhachsan.Lopdoituong
 {
     public class KTbangCheckin
     {
+        public static bool kt_ThemKhachBoTrongMacheckin(string macheckin)
+        {
+            try
+            {
+                if (macheckin == "")
+                {
+                  MessageBox.Show("Hãy nhập vào mã check in", "Chú ý");
+                  return false;
+                }
+                return true;
+            }
+            catch { return true; }
+        }
+
         public static bool kt_trungmacheckin(string macheckin)
         {
             try

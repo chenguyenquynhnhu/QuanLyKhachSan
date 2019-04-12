@@ -12,6 +12,14 @@ namespace UnitTest
     public class TestbangCheckin
     {
         [TestMethod]
+        public void Test_KhongNhapMaCheckin()
+        {
+            bool actual = KTbangCheckin.kt_ThemKhachBoTrongMacheckin("");
+            bool expected = false;
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
         public void test_trungmacheckin()
         {
             bool actual = KTbangCheckin.kt_trungmacheckin("CK001");
