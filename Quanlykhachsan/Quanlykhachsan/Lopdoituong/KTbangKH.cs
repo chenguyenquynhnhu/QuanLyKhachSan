@@ -72,11 +72,11 @@ namespace Quanlykhachsan.Lopdoituong
                 ketnoi.ThietlapketNoi();
                 laydulieu dl = new laydulieu();
                 ds1 = dl.getdata("insert into khachhang(tuoi)values('" + tuoi + "')");
-                return true;
+                return false;
             }
             catch {
                 MessageBox.Show("Nhập tuổi dạng số!", "Chú ý");
-                return false; }
+                return true; }
         }
 
         //public static bool kt_KhongTrungMaKHvaMacheckin(string maKH, string macheckin)
