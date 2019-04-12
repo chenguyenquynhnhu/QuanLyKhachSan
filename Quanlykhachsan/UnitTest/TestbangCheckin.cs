@@ -19,6 +19,7 @@ namespace UnitTest
             Assert.AreEqual(expected, actual);
         }
 
+
         [TestMethod]
         public void test_trungmacheckin()
         {

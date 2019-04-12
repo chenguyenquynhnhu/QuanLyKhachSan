@@ -24,6 +24,7 @@ namespace Quanlykhachsan.Lopdoituong
             catch { return true; }
         }
 
+
         public static bool kt_trungmacheckin(string macheckin)
         {
             try
