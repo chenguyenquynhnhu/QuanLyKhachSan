@@ -18,13 +18,13 @@ namespace UnitTest
             Assert.AreEqual(expected, actual);
         }
 
-        //[TestMethod]
-        //public void Test_KhongNhapTenKH()
-        //{
-        //    bool actual = KTbangKH.kt_ThemKhachBoTrongTenKH("");
-        //    bool expected = false;
-        //    Assert.AreEqual(expected, actual);
-        //}
+        [TestMethod]
+        public void Test_KhongNhapTenKH()
+        {
+            bool actual = KTbangKH.kt_ThemKhachBoTrongTenKH("");
+            bool expected = false;
+            Assert.AreEqual(expected, actual);
+        }
 
         [TestMethod]
         public void Test_trungmaKH()

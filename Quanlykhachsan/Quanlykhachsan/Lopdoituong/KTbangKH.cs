@@ -24,19 +24,19 @@ namespace Quanlykhachsan.Lopdoituong
             catch { return true; }
         }
 
-        //public static bool kt_ThemKhachBoTrongTenKH(string tenKH)
-        //{
-        //    try
-        //    {
-        //        if (tenKH == "")
-        //        {
-        //            MessageBox.Show("Hãy nhập vào tên khách hàng", "Chú ý");
-        //            return false;
-        //        }
-        //        return true;
-        //    }
-        //    catch { return true; }
-        //}
+        public static bool kt_ThemKhachBoTrongTenKH(string tenKH)
+        {
+            try
+            {
+                if (tenKH == "")
+                {
+                    MessageBox.Show("Hãy nhập vào tên khách hàng", "Chú ý");
+                    return false;
+                }
+                return true;
+            }
+            catch { return true; }
+        }
 
         public static bool kt_trungmaKH(string maKH)
         {
