@@ -31,7 +31,7 @@ namespace Quanlykhachsan.Lopdoituong
                 if (tenKH == "")
                 {
                     MessageBox.Show("Hãy nhập vào tên khách hàng", "Chú ý");
-                    return true;
+                    return false;
                 }
                 return true;
             }
