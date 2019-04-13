@@ -58,6 +58,18 @@ namespace UnitTest
             Assert.AreEqual(expected, actual);
         }
 
+        [TestClass]
+        public class TestNhapTGThue
+        {
+            [TestMethod]
+            public void Test_NhapTGThueKPhaiDangSo()
+            {
+                bool actual = KTbangKH.kt_nhapTGThue("hai");
+                bool expected = false;
+                Assert.AreEqual(expected, actual);
+            }
+        }
+
         //[TestMethod]
         //public void Test_KhongNhapTenKH()
         //{

@@ -113,6 +113,25 @@ namespace Quanlykhachsan.Lopdoituong
             catch { return true; }
         }
 
+        public static bool kt_nhapTGThue(string TGThue)
+        {
+            try
+            {
+
+                DataSet ds1 = new DataSet();
+
+
+                ketnoi.ThietlapketNoi();
+                laydulieu dl = new laydulieu();
+                ds1 = dl.getdata("insert into khachhang(songay)values('" + TGThue + "')");
+                return false;
+
+            }
+            catch { return true; }
+        }
+
+
+
         //public static bool kt_KhongTrungMaKHvaMacheckin(string maKH, string macheckin)
         //{
         //    try
