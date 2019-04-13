@@ -31,7 +31,7 @@ namespace Quanlykhachsan.Lopdoituong
                 if (tenKH == "")
                 {
                     MessageBox.Show("Hãy nhập vào tên khách hàng", "Chú ý");
-                    return false;
+                    return true;
                 }
                 return true;
             }
@@ -42,7 +42,6 @@ namespace Quanlykhachsan.Lopdoituong
         {
             try
             {
-                
                 DataSet ds1 = new DataSet();
 
                 ketnoi.ThietlapketNoi();
@@ -66,16 +65,20 @@ namespace Quanlykhachsan.Lopdoituong
         {
             try
             {
-
+                if (tuoi == "")
+                {
+                    return true;
+                }
+               
+                    
                 DataSet ds1 = new DataSet();
-
                 ketnoi.ThietlapketNoi();
                 laydulieu dl = new laydulieu();
+               
                 ds1 = dl.getdata("insert into khachhang(tuoi)values('" + tuoi + "')");
                 return false;
             }
             catch {
-                MessageBox.Show("Nhập tuổi dạng số!", "Chú ý");
                 return true; }
         }
 
@@ -83,7 +86,10 @@ namespace Quanlykhachsan.Lopdoituong
         {
             try
             {
-
+                if (SoPhongDoi == "")
+                {
+                    return true;
+                }
                 DataSet ds1 = new DataSet();
 
 
@@ -100,7 +106,10 @@ namespace Quanlykhachsan.Lopdoituong
         {
             try
             {
-
+                if (SoPhongDon == "")
+                {
+                    return true;
+                }
                 DataSet ds1 = new DataSet();
 
 
@@ -117,7 +126,10 @@ namespace Quanlykhachsan.Lopdoituong
         {
             try
             {
-
+                if (TGThue == "")
+                {
+                    return true;
+                }
                 DataSet ds1 = new DataSet();
 
 

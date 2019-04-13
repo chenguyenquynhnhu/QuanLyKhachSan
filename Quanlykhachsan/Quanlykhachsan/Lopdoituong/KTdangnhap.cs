@@ -20,8 +20,6 @@ namespace Quanlykhachsan.Lopdoituong
             {
                 KTdangnhap P = new KTdangnhap();
                 DataSet ds1 = P.ds;
-
-
                 ketnoi.ThietlapketNoi();
                 laydulieu dl = new laydulieu();
                 ds1 = dl.getdata("select * from nhanvien where matkhau = '" + matkhau + "' and tendangnhap = '" + ten + "'");
