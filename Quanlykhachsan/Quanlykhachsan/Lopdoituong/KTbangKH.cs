@@ -61,6 +61,7 @@ namespace Quanlykhachsan.Lopdoituong
             catch { return true; }
         }
 
+       
         public static bool kt_nhaptuoi(string tuoi)
         {
             try
