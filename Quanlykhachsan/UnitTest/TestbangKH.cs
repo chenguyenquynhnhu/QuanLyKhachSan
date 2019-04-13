@@ -41,6 +41,16 @@ namespace UnitTest
             bool expected = false;
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void Test_NhapSoPhongDoiKPhaiDangSo()
+        {
+            bool actual = KTbangKH.kt_nhapSoPhongDoi("hai");
+            bool expected = false;
+            Assert.AreEqual(expected, actual);
+        }
+
+
         //[TestMethod]
         //public void Test_KhongNhapTenKH()
         //{

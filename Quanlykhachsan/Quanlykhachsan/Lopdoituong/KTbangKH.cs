@@ -79,6 +79,24 @@ namespace Quanlykhachsan.Lopdoituong
                 return true; }
         }
 
+        public static bool kt_nhapSoPhongDoi(string SoPhongDoi)
+        {
+            try
+            {
+
+                DataSet ds1 = new DataSet();
+
+
+                ketnoi.ThietlapketNoi();
+                laydulieu dl = new laydulieu();
+                ds1 = dl.getdata("insert into khachhang(phongdon)values('" + SoPhongDoi + "')");
+                return false;
+
+            }
+            catch { return true; }
+        }
+
+
         //public static bool kt_KhongTrungMaKHvaMacheckin(string maKH, string macheckin)
         //{
         //    try
